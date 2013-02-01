@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>jQuery UI Accordion : Critters 2</title>
+<script type='text/javascript' src='jquery-ui-1.7.2/js/jquery-1.3.2.min.js'></script>
+<script type='text/javascript' src='jquery-ui-1.7.2/js/jquery-ui-1.7.2.min.js'></script>
+<link type='text/css' href='jquery-ui-1.7.2/css/base/ui.core.css' rel='stylesheet'/>
+<link type='text/css' href='jquery-ui-1.7.2/css/base/ui.accordion.css' rel='stylesheet'/>
+<link type='text/css' href='jquery-ui-1.7.2/css/base/ui.theme.css' rel='stylesheet'/>
+<link type='text/css' href='jquery-ui-1.7.2/css/base/ui.images.css' rel='stylesheet'/>
+<link type='text/css' href='../assets/css/accordion.css' rel='stylesheet'/>
+
+</head>
+
+<body>
+<script type="text/javascript">
+$(function(){
+				// Accordion
+				$("#jQueryUIAccordion").accordion({ header: "h3",
+											animated: "bounceslide",
+											event: "click",
+											collapsible : "false"
+											, icons: { 'header': 'ui-icon-plus', 'headerSelected': 'ui-icon-minus' }  });			
+				});
+</script>
+<!-- Accordion -->
+		<div id="jQueryUIAccordion" class="ui-black-icons ui-80TopTo0Bottom-gradient-content ui-BottomToTop-gradient-header">
+			<div>
+				<h3><a href="#">First</a></h3>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend auctor velit. Nam venenatis bibendum lorem ac dignissim. Curabitur non mauris id leo scelerisque hendrerit. Proin lacinia tellus non nulla vehicula id commodo justo volutpat. Aliquam laoreet elit sed massa vulputate eget sodales felis bibendum. Integer vel ligula vitae lectus lobortis pellentesque eget non massa. Integer felis tellus, convallis sed vulputate sed, elementum quis nunc. Vestibulum volutpat porttitor accumsan. Quisque nunc risus, congue at pellentesque vel, volutpat at neque. Vivamus rutrum, sapien ac fermentum imperdiet, nisi libero mattis quam, eu mollis sem metus id ligula. </div>
+			</div>
+			<div>
+				<h3><a href="#">Second</a></h3>
+				<div>Nam porttitor laoreet sapien, et ultricies nisi lobortis vel. Duis nec quam arcu. Cras tincidunt ultrices velit sed iaculis. Curabitur nec condimentum nisl. Morbi purus sapien, mattis et faucibus at, ultricies blandit metus. Nullam facilisis luctus urna eu egestas. Cras rhoncus ultricies elit, tristique egestas erat interdum id.</div>
+			</div>
+			<div>
+				<h3><a href="#">Third</a></h3>
+				<div>Nam dui erat, auctor a, dignissim quis.</div>
+			</div>
+		</div>
+</body>
+</html>

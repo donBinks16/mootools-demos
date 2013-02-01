@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+#jQueryUIAccordion .ui-widget {
+	font-family: inherit;
+	padding: 20px;
+}
+#jQueryUIAccordion .ui-accordion-header {
+	line-height: 1em;
+	color: #ff6949;
+	text-decoration: none;
+	font-size: .9em;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #ff9900;
+	border-color: #000000;
+	border-width: 2px;
+}
+#jQueryUIAccordion .ui-accordion-content {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #233236;
+	font-size: .7em;
+	background-color: #ff9900;
+	border-color: #000000;
+	border-width: 2px;
+}
+#jQueryUIAccordion .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #ff6949;
+}
+/* Active text color */
+#jQueryUIAccordion .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #003399;
+}
+/* Active background color */
+#jQueryUIAccordion .ui-state-active {
+	background-color: #ff9900;
+}
+/* text color when you hover */
+#jQueryUIAccordion .ui-state-hover a, .ui-state-hover a:hover {
+	color: #286956;
+}
+/* background color when you hover */
+#jQueryUIAccordion .ui-state-hover {
+	background-color: #ff9900;
+}
+/* Corner radius */
+#jQueryUIAccordion .ui-corner-tl {
+	-moz-border-radius-topleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-tr {
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-bl {
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-br {
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-top {
+	-moz-border-radius-topleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-bottom {
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-right {
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-left {
+	-moz-border-radius-topleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+}
+#jQueryUIAccordion .ui-corner-all {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
