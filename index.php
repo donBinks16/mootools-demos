@@ -39,8 +39,15 @@ if (isset($_GET['demo'])){
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>MooTools Demos<?php if (!empty($descriptor['name'])): echo ' - ' . $descriptor['name']; endif; ?></title>
+    <script type='text/javascript' src='assets/js/jquery-1.3.2.min.js'></script>
+	<script type='text/javascript' src='assets/js/jquery-ui-1.7.2.min.js'></script>
 	<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/demos.css" rel="stylesheet" type="text/css" />
+    <link type='text/css' href='assets/css/base/ui.core.css' rel='stylesheet'/>
+    <link type='text/css' href='assets/css/base/ui.accordion.css' rel='stylesheet'/>
+    <link type='text/css' href='assets/css/base/ui.theme.css' rel='stylesheet'/>
+    <link type='text/css' href='assets/css/base/ui.images.css' rel='stylesheet'/>
+    <link type='text/css' href='assets/css/accordion.css' rel='stylesheet'/>
 <?php if ($demo && !empty($css)): ?>
 <style>
 <?php echo $css; ?>
@@ -163,12 +170,32 @@ if (isset($_GET['demo'])){
 
 
 				<?php else: ?>
-				<h2>MooTools Demos</h2>
+                <script type="text/javascript">
+				$(function(){
+					$("#jQueryUIAccordion").accordion({ header: "h3",
+											animated: "bounceslide",
+											event: "click",
+											collapsible : "false"
+											, icons: { 'header': 'ui-icon-plus', 'headerSelected': 'ui-icon-minus' }  });
+					});
+</script>
+				<div id="jQueryUIAccordion" class="ui-black-icons ui-80TopTo0Bottom-gradient-content ui-BottomToTop-gradient-header">
+                        <div>
+                            <h2>MooTools Demos</h2>
+                            <p>The demos are here to give you some examples of how MooTools works. Demos can be opened 
+                            in <a href="http://jsfiddle.net">jsFiddle</a> for editing, and you can 
+                            <a href="https://github.com/fakedarren/mootools-demos">download the entire demo runner here</a>.</p>
+                            <p>We hope you enjoy our demos.</p>
+                            <p>The MooTools Development Team.</p>
+                        </div>
+                        <div>
+                            <h3>TEST</h3>
+                            <p>blah blah blah</p>
+                        </div>
+                  </div>
+					
 
-				<p>The demos are here to give you some examples of how MooTools works. Demos can be opened in <a href="http://jsfiddle.net">jsFiddle</a> for editing, and you can <a href="https://github.com/fakedarren/mootools-demos">download the entire demo runner here</a>.</p>
-
-				<p>We hope you enjoy our demos.</p>
-				<p>The MooTools Development Team.</p>
+				
 				<?php endif; ?>
 			</div>
 		</div>
